@@ -4,9 +4,10 @@
     "sources": [
         "styles.scss",
         "_variables.scss",
+        "_mixins.scss",
+        "_animations.scss",
         "_home.scss",
-        "_menu.scss",
-        "_animations.scss"
+        "_menu.scss"
     ],
     "names": [],
     "file": "styles.css"

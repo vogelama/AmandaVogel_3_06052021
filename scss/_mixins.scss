@@ -1,0 +1,84 @@
+//Break points 
+
+//700px, 850px
+$breakpoints-up: ("medium": "43.75em", "large": "53.125em");
+
+//699px, 849px
+$breakpoints-down: ("small": "43.6875em", "medium": "53.0625em");
+
+@mixin breakpoint-up($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+        @content; 
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+        @content; 
+    }
+}
+
+//Heart 
+
+@mixin heartOutline {
+    text-shadow: 0px -1.6px $darkGrey, 0px 2.25px $darkGrey, 1.6px .4px $darkGrey, -1.6px .4px $darkGrey, -1.5px -1.35px $darkGrey,1.5px -1.35px $darkGrey, 0px -1.9px $darkGrey;
+    color: white;
+}
+
+@mixin heartGradient {
+    text-shadow: none;
+    color: $primary;
+    background-image: $reverseLinearGrad;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+//Buttons
+
+@mixin button {
+    background-color: $linearGrad;
+    color: #fff;
+    padding: 20px;
+}
+
+//Font Styles Mobile 
+@mixin h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+@mixin h1-menu {
+    font-family: $font-shrik;
+    font-size: 1.75rem;
+}
+
+@mixin h2-light {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #000;
+}
+
+@mixin h2-regular {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000;
+}
+
+@mixin h2-bold{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+@mixin h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+@mixin p {
+    font-size: .95rem;
+    font-weight: 700;
+}
+
