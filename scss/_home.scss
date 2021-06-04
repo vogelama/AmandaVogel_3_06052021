@@ -1,0 +1,314 @@
+/* Start global styles */
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: $font-rob;
+    color: #000;
+}
+
+button {
+    cursor: pointer;
+    background: $linearGrad;
+    font-size: .95rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    padding: 16px 22px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+
+    &:hover {
+        opacity: 75%;
+        box-shadow: 0px 5px 10px rgba(0,0,0,.55);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+ /* End global styles */
+
+ /* Start Header Section */
+ .header {
+     position: fixed;
+     top: 0;
+     z-index: 1;
+     display: flex;
+     height: 64px;
+     width: 100%;
+     background-color: #fff;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0 2px 6px -1px rgba(0,0,0,.25);
+
+     &__logo {
+         width: 165px;
+     }
+ }
+ /* End Header Section */
+
+ /* Start Location Section */
+ .location {
+     display: flex;
+     width: 100%;
+     margin-top: 64px;
+     background-color: $locationGrey;
+     justify-content: center;
+
+     &__searchbar {
+         display: flex;
+     }
+
+     &__icon {
+         padding-right: 18px;
+         font-size: 1.25rem;
+         padding-top: 18px;
+         padding-bottom: 18px;
+     }
+
+     &__searchfield input{
+        background-color: transparent;
+        border: none;
+        width: 150px;
+        height: 100%;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include h3;
+
+        &:focus {
+            outline: none;
+        }
+    }
+ }
+
+ ::placeholder {
+     @include h3;
+     color: #3C3C3C;
+ }
+ /* End Location Section */
+
+ /* Start Intro Section */
+.intro {
+    width: 100%;
+    background-color: $lightGrey;
+    text-align: center;
+    padding: 43px 20px 57px 20px;
+
+    &__title {
+        @include h1;
+        padding: 0px 45px 15px 45px;
+    }
+
+    &__description {
+        @include h2-light;
+        padding-bottom: 30px;
+    }
+}
+ /* End Intro Section */
+
+ /* Start Process Section */
+ .process {
+     width: 100%;
+     padding: 53px 20px 68px 30px;
+
+     @include breakpoint-up(medium) {
+        width: 400px;
+        margin: 0 auto;
+     }
+
+     &__title {
+         @include h1;
+         padding-bottom: 32px;
+     }
+
+     &__item {
+         display: flex;
+         align-items: center;
+         background-color: $lightGrey;
+         padding: 26px 32px;
+         border-radius: 20px;
+         margin-bottom: 25px;
+         box-shadow: 0px 2px 15px rgba(0,0,0,.15);
+         position: relative;
+
+         &:last-of-type {
+             margin-bottom: 0;
+         }
+     }
+
+     &__item3 {
+        background-color: $primaryLight;
+    
+        & i {
+            color: $primary;
+        }
+     }
+
+     &__number {
+         background-color: $primary;
+         padding: 4px 8px;
+         border-radius: 50%;
+         color: #fff;
+         font-size: .875rem;
+         position: absolute;
+         left: -12px;
+     }
+
+     &__icon {
+         color: $mediumGrey;
+         font-size: 1.25rem;
+         padding-right: 25px;
+     }
+
+     &__text {
+         @include h3;
+     }
+ }
+ /* End Process Section */
+
+ /* Start Restaurants Section */
+.restaurants {
+    width: 100%;
+    cursor: pointer;
+    background-color: $lightGrey;
+    padding: 65px 20px 64px 20px;
+
+    @include breakpoint-up(medium) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+  &__title {
+      @include h1;
+      padding-bottom: 28px;
+  }
+
+  &__items {
+      @include breakpoint-up(large) {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 25px;
+      }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    position: relative;
+
+    &:hover {
+        border: 3px solid $primary;
+        border-radius: 17px;
+    }
+
+    @include breakpoint-up(large) {
+        width: calc(50% - 13px);
+    }
+  }
+  
+  &__image {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+    aspect-ratio: 1.92 / 1;
+    object-fit:cover;
+  }
+  
+  &__new {
+    background-color: $accentLight;
+    color: $accentDark;
+    @include p; 
+    padding: 8px 14px;
+    text-align: center;
+    position: absolute;
+    top: 14px;
+    right: 12px;
+  }
+  
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 15px;
+  }
+  
+  &__text {
+    width: calc(100% - 54px);
+  }
+  
+  &__name {
+    @include h2-bold;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 5px;
+  }
+  
+  &__location {
+    @include h2-light;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+   /* End Restaurants Section */
+
+   /* Start Footer Section */
+   .footer {
+       background-color: $darkGrey;
+       width: 100%;
+       padding: 28px 20px 38px 20px;
+
+       @include breakpoint-up(medium) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+       &__logo {
+           width: 110px;
+           margin-bottom: 22px;
+       }
+
+       &__group {
+           display: flex;
+           align-items: center;
+           color: #fff;
+       }
+
+       & a {
+            display: block;
+            width: 210px;
+            @include h2-regular;
+            color: white;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary;
+            }
+       }
+
+       &__icon {
+           padding-right: 12px;
+           font-size: .8rem;
+       }
+   }
+   /* End Footer Section */
+
+
