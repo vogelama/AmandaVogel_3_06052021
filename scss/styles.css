@@ -409,4 +409,324 @@ img {
 }
 
 /* End Footer Section */
+/* Start global styles */
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background: linear-gradient(355deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
+  font-size: .95rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  padding: 16px 22px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  opacity: 75%;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+/* End global styles */
+/* Start Header Section */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
+}
+
+.header__icon-back {
+  color: #000;
+  position: absolute;
+  left: 22px;
+  top: 25px;
+  font-size: 1rem;
+  line-height: 64px;
+}
+
+.header__icon-back:hover {
+  color: #9356DC;
+}
+
+.header__logo {
+  width: 165px;
+}
+
+/* End Header Section */
+/* Start Banner Section */
+.banner {
+  margin-top: 64px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 340px;
+}
+
+/* End Banner Section */
+/* Start Main Body Section */
+.main {
+  position: absolute;
+  top: 340px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+/* Start Menu Section */
+.menu {
+  border-top-left-radius: 38px;
+  border-top-right-radius: 38px;
+  background-color: #f6f6f6;
+  padding: 40px 20px 58px 20px;
+}
+
+@media (min-width: 43.75em) {
+  .menu {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 53.125em) {
+  .menu__all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.menu__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 37px;
+}
+
+.menu__title {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.75rem;
+  padding-right: 36px;
+}
+
+.menu__subheading {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #000;
+  text-transform: uppercase;
+  padding-bottom: 26px;
+  position: relative;
+}
+
+.menu__subheading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 18px;
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: white;
+  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: calc(100% - 80px);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+}
+
+.menu__dish {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.menu__description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.menu__money {
+  height: auto;
+  padding: 0px 20px 10px 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-bottom-right-radius: 15px;
+  font-weight: bold;
+}
+
+.button__commander {
+  padding: 16px 50px;
+  margin-top: 45px;
+}
+
+.entrees {
+  opacity: 0;
+  padding-bottom: 42px;
+  -webkit-animation: ease-in fadeIn-1 2s;
+          animation: ease-in fadeIn-1 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (min-width: 53.125em) {
+  .entrees {
+    width: calc(50% - 13px);
+    padding-bottom: 0;
+  }
+}
+
+.plats {
+  opacity: 0;
+  padding-bottom: 42px;
+  -webkit-animation: ease-in fadeIn-2 2s;
+          animation: ease-in fadeIn-2 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (min-width: 53.125em) {
+  .plats {
+    width: calc(50% - 13px);
+    padding-bottom: 0;
+  }
+}
+
+.desserts {
+  opacity: 0;
+  -webkit-animation: ease-in fadeIn-3 2s;
+          animation: ease-in fadeIn-3 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media (min-width: 53.125em) {
+  .desserts {
+    width: calc(50% - 13px);
+  }
+}
+
+/* End Menu Section */
+/* Start Footer Section */
+.footer {
+  background-color: #353535;
+  width: 100%;
+  padding: 28px 20px 38px 20px;
+}
+
+.footer__logo {
+  width: 110px;
+  margin-bottom: 22px;
+}
+
+.footer__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.footer a {
+  display: block;
+  width: 210px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: #9356DC;
+}
+
+.footer__icon {
+  padding-right: 12px;
+  font-size: .8rem;
+}
+
+/* End Footer Section */
+/* End Main Body Section */
 /*# sourceMappingURL=styles.css.map */
