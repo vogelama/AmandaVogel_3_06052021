@@ -140,7 +140,7 @@ input[type=checkbox] {
   transition: 1s;
 }
 
-.menu__check input:checked ~ .menu__item .text {
+.menu__check input:checked ~ .menu__item .menu__text {
   width: calc(100% - 140px);
 }
 
