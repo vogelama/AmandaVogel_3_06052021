@@ -20,9 +20,14 @@ $breakpoints-down: ("small": "43.6875em", "medium": "53.0625em");
 
 //Heart 
 
-@mixin heartOutline {
+@mixin heartOutline-Homepage {
     text-shadow: 0px -1.6px $darkGrey, 0px 2.25px $darkGrey, 1.6px .4px $darkGrey, -1.6px .4px $darkGrey, -1.5px -1.35px $darkGrey,1.5px -1.35px $darkGrey, 0px -1.9px $darkGrey;
-    color: white;
+    color: #fff;
+}
+
+@mixin heartOutline-Menu {
+    text-shadow: 0px -1.6px $darkGrey, 0px 2.25px $darkGrey, 1.6px .4px $darkGrey, -1.6px .4px $darkGrey, -1.5px -1.35px $darkGrey,1.5px -1.35px $darkGrey, 0px -1.9px $darkGrey;
+    color: $lightGrey;
 }
 
 @mixin heartGradient {

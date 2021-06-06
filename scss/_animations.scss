@@ -1,0 +1,114 @@
+input[type=checkbox] {
+    display:none;
+ }
+
+/* Heart animation */
+.heart-homepage {
+    display: block;
+    @include heartOutline-Homepage;
+    font-size: 1.35rem;
+    cursor: pointer;
+    user-select: none;
+  & i:hover {
+      @include heartGradient;
+      }
+  & input:checked ~ i {
+      @include heartGradient;
+      animation: growHeart 1s;
+      }
+}
+
+.heart-menu {
+    display: block;
+    @include heartOutline-Menu;
+    font-size: 1.35rem;
+    cursor: pointer;
+    user-select: none;
+  & i:hover {
+      @include heartGradient;
+      }
+  & input:checked ~ i {
+      @include heartGradient;
+      animation: growHeart 1s;
+      }
+}
+
+@keyframes growHeart {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Checkmark animation */
+.checkmark {
+    display: flex;
+    height: 64px;
+    background-color: #99E2D0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    right: -9999px;
+    opacity:0;
+
+    &-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+  }
+  
+  .fa-check {
+    color: #99E2D0;
+    font-size: .85rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .menu__check input:checked ~ .menu__item .checkmark {
+    position: static;
+    opacity: 1;
+    transition: 1s;
+  }
+  
+  .menu__check input:checked ~ .menu__item .text {
+    width: calc(100% - 140px);
+  }
+
+  /* Fade in animation */
+  @keyframes fadeIn-1 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn-2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn-3 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
