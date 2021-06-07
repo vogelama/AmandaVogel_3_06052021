@@ -89,7 +89,7 @@ input[type=checkbox] {
   }
   
   .menu__check input:checked ~ .menu__item .menu__text {
-    width: calc(100% - 200px);
+    width: calc(100% - 140px);
   }
   /* End Checkmark animation */
 
