@@ -116,7 +116,6 @@ img {
 
 .footer a {
   display: block;
-  width: 210px;
   font-size: 1.1rem;
   font-weight: 400;
   color: #000;
@@ -475,7 +474,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 25px;
   padding-bottom: 37px;
 }
 
@@ -491,7 +489,12 @@ img {
 .menu__title {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.75rem;
-  padding-right: 36px;
+}
+
+@media (min-width: 43.75em) {
+  .menu__title {
+    padding-right: 37px;
+  }
 }
 
 .menu__subheading {
@@ -561,11 +564,9 @@ img {
 }
 
 .menu__money {
-  height: auto;
-  padding: 0px 20px 10px 0px;
+  padding: 0px 30px 10px 25px;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  border-bottom-right-radius: 15px;
   font-weight: bold;
 }
 
@@ -716,7 +717,7 @@ input[type=checkbox] {
 /* End Heart animation */
 /* Checkmark animation */
 .menu__text {
-  width: calc(100% - 80px);
+  width: calc(100% - 82px);
   -webkit-transition: ease-in-out .75s;
   transition: ease-in-out .75s;
 }
@@ -725,7 +726,7 @@ input[type=checkbox] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 64px;
+  height: auto;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -735,13 +736,11 @@ input[type=checkbox] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  width: 0;
+  width: 0px;
   -webkit-transition: ease-in-out .75s;
   transition: ease-in-out .75s;
 }
@@ -781,7 +780,11 @@ input[type=checkbox] {
 }
 
 .menu__check input:checked ~ .menu__item .menu__text {
-  width: calc(100% - 140px);
+  width: calc(100% - 118px);
+}
+
+.menu__check input:checked ~ .menu__item .menu__money {
+  padding-right: 15px;
 }
 
 /* End Checkmark animation */

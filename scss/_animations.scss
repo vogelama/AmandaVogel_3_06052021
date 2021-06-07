@@ -45,23 +45,21 @@ input[type=checkbox] {
 
 /* Checkmark animation */
 .menu__text {
-  width: calc(100% - 80px);
+  width: calc(100% - 82px);
   transition: ease-in-out .75s; 
 }
 
 .checkmark {
     display: flex;
-    height: 64px;
+    height: auto;
     background-color: #99E2D0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     justify-content: center;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
     transform: scaleX(0);
     transform-origin: right;
-    width: 0;
+    width: 0px;
     transition: ease-in-out .75s;
 
     &-circle {
@@ -89,7 +87,11 @@ input[type=checkbox] {
   }
   
   .menu__check input:checked ~ .menu__item .menu__text {
-    width: calc(100% - 140px);
+    width: calc(100% - 118px);
+  }
+
+  .menu__check input:checked ~ .menu__item .menu__money {
+    padding-right: 15px;
   }
   /* End Checkmark animation */
 
