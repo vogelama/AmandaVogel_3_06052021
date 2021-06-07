@@ -50,34 +50,10 @@ input[type=checkbox] {
 }
 
 .checkmark {
-    display: flex;
-    height: auto;
-    background-color: #99E2D0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    justify-content: center;
-    align-items: center;
     transform: scaleX(0);
     transform-origin: right;
     width: 0px;
     transition: ease-in-out .75s;
-
-    &-circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-    }
-  }
-  
-  .fa-check {
-    color: #99E2D0;
-    font-size: .85rem;
-    cursor: pointer;
-    user-select: none;
   }
   
   .menu__check input:checked ~ .menu__item .checkmark {
@@ -88,10 +64,12 @@ input[type=checkbox] {
   
   .menu__check input:checked ~ .menu__item .menu__text {
     width: calc(100% - 118px);
+    transition: ease-in-out .75s;
   }
 
   .menu__check input:checked ~ .menu__item .menu__money {
     padding-right: 15px;
+    transition: ease-in-out .75s;
   }
   /* End Checkmark animation */
 
