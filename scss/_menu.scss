@@ -1,97 +1,19 @@
-/* Start global styles */
-*, ::after, ::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    max-width: 1500px;
-    margin: auto;
-    width: 100%;
-    font-family: $font-rob;
-    color: #000;
-}
-
-button {
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
-    background: $linearGrad;
-    font-size: .95rem;
-    font-weight: 500;
-    color: #fff;
-    border: none;
-    padding: 16px 22px;
-    border-radius: 30px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
-
-    &:hover {
-        opacity: 75%;
-        box-shadow: 0px 5px 10px rgba(0,0,0,.55);
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-}
- /* End global styles */
-
- /* Start Header Section */
- .header {
-     position: fixed;
-     top: 0;
-     left: 0;
-     z-index: 1;
-     display: flex;
-     height: 64px;
-     width: 100%;
-     background-color: #fff;
-     justify-content: center;
-     box-shadow: 0 2px 6px -1px rgba(0,0,0,.25);
-     max-width: 1500px;
-     margin: auto;
-
-     &__icon-back {
-         color: #000;
-         position: absolute;
-         left: 22px;
-         top: 25px;
-         font-size: 1rem;
-         line-height: 64px;
-
-         &:hover {
-             color: $primary;
-         }
-     }
-
-     &__logo {
-         width: 165px;
-     }
- }
- /* End Header Section */
-
- /* Start Banner Section */
+/* Start Banner Section */
  .banner {
-     margin-top: 64px;
+     position: fixed;
+     top: 64px;
      object-fit: cover;
      height: 340px;
  }
  /* End Banner Section */
 
  /* Start Main Body Section */
-
  .main {
-    position: absolute;
-    top: 340px;
+    position: relative;
+    padding-top: 340px;
     width: 100%;
     overflow-y: hidden;
-    max-width: 1500px;
-    margin: auto;
+    overflow-x: hidden;
  }
 
  /* Start Menu Section */
@@ -158,7 +80,6 @@ img {
         box-shadow: 1px 2px 15px rgba(0,0,0,.15);
         border-radius: 15px;
         cursor: pointer;
-        position: relative;
       }
 
       &__text {
@@ -166,7 +87,6 @@ img {
         flex-direction: column;
         justify-content: center;
         height: auto;
-        width: calc(100% - 80px);
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         padding: 10px; 
@@ -237,42 +157,5 @@ img {
     }
  }
  /* End Menu Section */
-
- /* Start Footer Section */
- .footer {
-    background-color: $darkGrey;
-    width: 100%;
-    padding: 28px 20px 38px 20px;
-
-    &__logo {
-        width: 110px;
-        margin-bottom: 22px;
-    }
-
-    &__group {
-        display: flex;
-        align-items: center;
-        color: #fff;
-    }
-
-    & a {
-         display: block;
-         width: 210px;
-         @include h2-regular;
-         color: white;
-         margin-bottom: 10px;
-         cursor: pointer;
-
-         &:hover {
-             color: $primary;
-         }
-    }
-
-    &__icon {
-        padding-right: 12px;
-        font-size: .8rem;
-    }
-}
-/* End Footer Section */
 
  /* End Main Body Section */

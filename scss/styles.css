@@ -207,14 +207,14 @@ input[type=checkbox] {
 }
 
 body {
-  max-width: 1500px;
-  margin: auto;
   font-family: "Roboto", sans-serif;
   color: #000;
   width: 100%;
 }
 
 button {
+  display: block;
+  margin: 0 auto;
   cursor: pointer;
   background: linear-gradient(355deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
   font-size: .95rem;
@@ -263,8 +263,6 @@ img {
           align-items: center;
   -webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
-  max-width: 1500px;
-  margin: auto;
 }
 
 .header__logo {
@@ -624,8 +622,6 @@ img {
 }
 
 body {
-  max-width: 1500px;
-  margin: auto;
   width: 100%;
   font-family: "Roboto", sans-serif;
   color: #000;
@@ -665,7 +661,6 @@ img {
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,8 +673,6 @@ img {
           justify-content: center;
   -webkit-box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
           box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.25);
-  max-width: 1500px;
-  margin: auto;
 }
 
 .header__icon-back {
@@ -702,7 +695,8 @@ img {
 /* End Header Section */
 /* Start Banner Section */
 .banner {
-  margin-top: 64px;
+  position: fixed;
+  top: 64px;
   -o-object-fit: cover;
      object-fit: cover;
   height: 340px;
@@ -711,12 +705,11 @@ img {
 /* End Banner Section */
 /* Start Main Body Section */
 .main {
-  position: absolute;
-  top: 340px;
+  position: relative;
+  padding-top: 340px;
   width: 100%;
   overflow-y: hidden;
-  max-width: 1500px;
-  margin: auto;
+  overflow-x: hidden;
 }
 
 /* Start Menu Section */

@@ -1,68 +1,4 @@
-/* Start global styles */
-*, ::after, ::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    max-width: 1500px;
-    margin: auto;
-    font-family: $font-rob;
-    color: #000;
-    width: 100%;
-}
-
-button {
-    cursor: pointer;
-    background: $linearGrad;
-    font-size: .95rem;
-    font-weight: 500;
-    color: #fff;
-    border: none;
-    padding: 16px 22px;
-    border-radius: 30px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
-
-    &:hover {
-        opacity: 75%;
-        box-shadow: 0px 5px 10px rgba(0,0,0,.55);
-    }
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-}
- /* End global styles */
-
- /* Start Header Section */
- .header {
-     position: fixed;
-     top: 0;
-     left:0;
-     right: 0;
-     z-index: 1;
-     display: flex;
-     height: 64px;
-     width: 100%;
-     background-color: #fff;
-     justify-content: center;
-     align-items: center;
-     box-shadow: 0 2px 6px -1px rgba(0,0,0,.25);
-     max-width: 1500px;
-     margin: auto;
-
-     &__logo {
-         width: 165px;
-     }
- }
- /* End Header Section */
-
- /* Start Location Section */
+/* Start Location Section */
  .location {
      display: flex;
      width: 100%;
@@ -273,48 +209,6 @@ img {
 }
    /* End Restaurants Section */
 
-   /* Start Footer Section */
-   .footer {
-       background-color: $darkGrey;
-       width: 100%;
-       padding: 28px 20px 38px 20px;
-
-       @include breakpoint-up(medium) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-       &__logo {
-           width: 110px;
-           margin-bottom: 22px;
-       }
-
-       &__group {
-           display: flex;
-           align-items: center;
-           color: #fff;
-       }
-
-       & a {
-            display: block;
-            width: 210px;
-            @include h2-regular;
-            color: white;
-            margin-bottom: 10px;
-            cursor: pointer;
-
-            &:hover {
-                color: $primary;
-            }
-       }
-
-       &__icon {
-           padding-right: 12px;
-           font-size: .8rem;
-       }
-   }
-   /* End Footer Section */
+  
 
 

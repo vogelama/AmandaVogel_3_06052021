@@ -41,8 +41,14 @@ input[type=checkbox] {
     transform: scale(1);
   }
 }
+/* End Heart animation */
 
 /* Checkmark animation */
+.menu__text {
+  width: calc(100% - 80px);
+  transition: ease-in-out .75s; 
+}
+
 .checkmark {
     display: flex;
     height: 64px;
@@ -53,9 +59,10 @@ input[type=checkbox] {
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    position: absolute;
-    right: -9999px;
-    opacity:0;
+    transform: scaleX(0);
+    transform-origin: right;
+    width: 0;
+    transition: ease-in-out .75s;
 
     &-circle {
         display: flex;
@@ -76,16 +83,17 @@ input[type=checkbox] {
   }
   
   .menu__check input:checked ~ .menu__item .checkmark {
-    position: static;
-    opacity: 1;
-    transition: 1s;
+    width: 50px;
+    transition: ease-in-out .75s;
+    transform: scaleX(1);
   }
   
   .menu__check input:checked ~ .menu__item .menu__text {
-    width: calc(100% - 140px);
+    width: calc(100% - 200px);
   }
+  /* End Checkmark animation */
 
-  /* Fade in animation */
+/* Fade in animation */
   @keyframes fadeIn-1 {
     from {
       opacity: 0;
@@ -112,3 +120,4 @@ input[type=checkbox] {
       opacity: 1;
     }
   }
+/* End Fade in animation */

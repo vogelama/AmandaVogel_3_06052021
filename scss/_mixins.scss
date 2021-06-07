@@ -41,9 +41,22 @@ $breakpoints-down: ("small": "43.6875em", "medium": "53.0625em");
 //Buttons
 
 @mixin button {
-    background-color: $linearGrad;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    background: $linearGrad;
+    font-size: .95rem;
+    font-weight: 500;
     color: #fff;
-    padding: 20px;
+    border: none;
+    padding: 16px 22px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+}
+
+@mixin buttonHover {
+    opacity: 75%;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.55);
 }
 
 //Font Styles Mobile 
