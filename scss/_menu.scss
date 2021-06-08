@@ -117,33 +117,6 @@
       }
  }
 
- .checkmark {
-    display: flex;
-    height: auto;
-    background-color: #99E2D0;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    justify-content: center;
-    align-items: center;
-
-    &-circle {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-    }
- }
-
- .fa-check {
-    color: #99E2D0;
-    font-size: .85rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
  .button__commander {
      padding: 16px 50px;
      margin-top: 45px;
