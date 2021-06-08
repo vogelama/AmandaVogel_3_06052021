@@ -27,7 +27,7 @@ input[type=checkbox] {
   bottom: 0;
   background-color: $primary;
   opacity: .85;
-  animation: fadeOut ease-out .75s;
+  animation: fadeOut ease-out 1s;
   animation-delay: 2.25s;
   animation-fill-mode: forwards;
 }
