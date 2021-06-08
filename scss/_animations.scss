@@ -9,13 +9,17 @@ input[type=checkbox] {
     font-size: 1.35rem;
     cursor: pointer;
     user-select: none;
+
   & i:hover {
-      @include heartGradient;
+      @include breakpoint-up(small) {
+        @include heartGradient;
       }
+    }
+
   & input:checked ~ i {
       @include heartGradient;
       animation: growHeart 1s;
-      }
+    }
 }
 
 .heart-menu {
@@ -24,13 +28,17 @@ input[type=checkbox] {
     font-size: 1.35rem;
     cursor: pointer;
     user-select: none;
+
   & i:hover {
-      @include heartGradient;
+      @include breakpoint-up(small) {
+        @include heartGradient;
       }
+    }
+
   & input:checked ~ i {
       @include heartGradient;
       animation: growHeart 1s;
-      }
+    }
 }
 
 @keyframes growHeart {

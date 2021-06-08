@@ -14,7 +14,15 @@ button {
     @include button;
 
     &:hover {
-        @include buttonHover;
+        @include breakpoint-up(small) {
+            @include buttonHover;
+        }
+    }
+
+    &:active {
+        @include breakpoint-down(small) {
+            @include buttonHover;
+        }
     }
 }
 
@@ -48,7 +56,15 @@ img {
         line-height: 64px;
 
         &:hover {
-            color: $primary;
+            @include breakpoint-up(small) {
+                color: $primary;
+            }
+        }
+
+        &:active {
+            @include breakpoint-down(small) {
+                color: $primary;
+            }
         }
     }
 
@@ -84,14 +100,21 @@ img {
 
     & a {
          display: block;
-        //  width: 210px;
          @include h2-regular;
          color: white;
          margin-bottom: 10px;
          cursor: pointer;
 
          &:hover {
-             color: $primary;
+             @include breakpoint-up(small) {
+                color: $primary;
+             }
+         }
+
+         &:active {
+             @include breakpoint-down(small) {
+                color: $primary;
+             }
          }
     }
 

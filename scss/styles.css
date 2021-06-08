@@ -15,12 +15,14 @@ input[type=checkbox] {
           user-select: none;
 }
 
-.heart-homepage i:hover {
-  text-shadow: none;
-  color: #9356DC;
-  background-image: linear-gradient(193deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 25em) {
+  .heart-homepage i:hover {
+    text-shadow: none;
+    color: #9356DC;
+    background-image: linear-gradient(193deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .heart-homepage input:checked ~ i {
@@ -45,12 +47,14 @@ input[type=checkbox] {
           user-select: none;
 }
 
-.heart-menu i:hover {
-  text-shadow: none;
-  color: #9356DC;
-  background-image: linear-gradient(193deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@media (min-width: 25em) {
+  .heart-menu i:hover {
+    text-shadow: none;
+    color: #9356DC;
+    background-image: linear-gradient(193deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .heart-menu input:checked ~ i {
@@ -207,10 +211,20 @@ button {
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
-  opacity: 75%;
-  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
-          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+@media (min-width: 25em) {
+  button:hover {
+    opacity: 75%;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+  }
+}
+
+@media (max-width: 24.9375em) {
+  button:active {
+    opacity: 75%;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+  }
 }
 
 a {
@@ -248,8 +262,16 @@ img {
   line-height: 64px;
 }
 
-.header__icon-back:hover {
-  color: #9356DC;
+@media (min-width: 25em) {
+  .header__icon-back:hover {
+    color: #9356DC;
+  }
+}
+
+@media (max-width: 24.9375em) {
+  .header__icon-back:active {
+    color: #9356DC;
+  }
 }
 
 .header__logo {
@@ -305,8 +327,16 @@ img {
   cursor: pointer;
 }
 
-.footer a:hover {
-  color: #9356DC;
+@media (min-width: 25em) {
+  .footer a:hover {
+    color: #9356DC;
+  }
+}
+
+@media (max-width: 24.9375em) {
+  .footer a:active {
+    color: #9356DC;
+  }
 }
 
 .footer__icon {
@@ -530,9 +560,18 @@ img {
   position: relative;
 }
 
-.restaurants__item:hover {
-  border: 3px solid #9356DC;
-  border-radius: 17px;
+@media (min-width: 25em) {
+  .restaurants__item:hover {
+    border: 3px solid #9356DC;
+    border-radius: 17px;
+  }
+}
+
+@media (max-width: 24.9375em) {
+  .restaurants__item:active {
+    border: 3px solid #9356DC;
+    border-radius: 17px;
+  }
 }
 
 @media (min-width: 53.125em) {
