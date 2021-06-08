@@ -351,8 +351,10 @@ body {
   color: #000;
 }
 
-button {
+.button {
   display: block;
+  text-align: center;
+  width: 215px;
   margin: 0 auto;
   cursor: pointer;
   background: linear-gradient(355deg, #9356dc 0%, #be64db 40%, #ff79da 100%);
@@ -360,14 +362,15 @@ button {
   font-weight: 500;
   color: #fff;
   border: none;
-  padding: 16px 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 25em) {
-  button:hover {
+  .button:hover {
     opacity: 75%;
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
@@ -375,7 +378,7 @@ button {
 }
 
 @media (max-width: 24.9375em) {
-  button:active {
+  .button:active {
     opacity: 75%;
     -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
@@ -947,11 +950,6 @@ img {
   transition: ease-in-out .75s;
 }
 
-.button__commander {
-  padding: 16px 50px;
-  margin-top: 45px;
-}
-
 .entrees {
   opacity: 0;
   padding-bottom: 42px;
@@ -987,6 +985,7 @@ img {
 }
 
 .desserts {
+  margin-bottom: 45px;
   opacity: 0;
   -webkit-animation: ease-in fadeIn-3 2s;
           animation: ease-in fadeIn-3 2s;
@@ -1000,6 +999,10 @@ img {
   .desserts {
     width: calc(50% - 13px);
   }
+}
+
+.button__commander {
+  width: 185px;
 }
 
 /* End Menu Section */

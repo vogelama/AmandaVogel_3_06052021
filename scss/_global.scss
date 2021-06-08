@@ -14,7 +14,7 @@ body {
     color: #000;
 }
 
-button {
+.button {
     @include button;
 
     &:hover {

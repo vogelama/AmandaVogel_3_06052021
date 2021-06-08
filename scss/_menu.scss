@@ -117,11 +117,6 @@
       }
  }
 
- .button__commander {
-     padding: 16px 50px;
-     margin-top: 45px;
- }
-
  .entrees {
     opacity: 0;
     padding-bottom: 42px;
@@ -148,6 +143,7 @@
  }
 
  .desserts {
+    margin-bottom: 45px;
     opacity: 0;
     animation: ease-in fadeIn-3 2s;
     animation-delay: 2s;
@@ -157,6 +153,11 @@
         width: calc(50% - 13px);
     }
  }
+
+ .button__commander {
+    width: 185px;
+}
+
  /* End Menu Section */
 
  /* End Main Body Section */
