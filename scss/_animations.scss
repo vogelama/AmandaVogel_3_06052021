@@ -3,7 +3,7 @@ input[type=checkbox] {
  }
 
  /* Loading Spinner Animation */
- body {
+ .spinner-container {
   animation: noScroll 3.75s;
   overflow: auto;
  }
