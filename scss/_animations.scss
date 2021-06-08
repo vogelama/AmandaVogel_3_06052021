@@ -72,6 +72,9 @@ input[type=checkbox] {
 /* Heart animation */
 .heart-homepage {
     display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
     @include heartOutline-Homepage;
     font-size: 1.35rem;
     cursor: pointer;
