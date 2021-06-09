@@ -152,17 +152,19 @@
     margin-bottom: 18px;
     position: relative;
 
-    &:hover {
+    & a:hover {
         @include breakpoint-up(small) {
             border: 3px solid $primary;
             border-radius: 17px;
+            margin: -3px;
         }
     }
 
-    &:active {
+    & a:active {
         @include breakpoint-down(small) {
             border: 3px solid $primary;
             border-radius: 17px;
+            margin: -3px;
         }
     }
 

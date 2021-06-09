@@ -30,15 +30,15 @@ input[type=checkbox] {
 .spinner-bg {
   z-index: 99999;
   position: absolute;
-  height: 1500px;
+  height: 1905px;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   background-color: #9356DC;
   opacity: .85;
-  -webkit-animation: fadeOut ease-out .75s;
-          animation: fadeOut ease-out .75s;
+  -webkit-animation: fadeOut ease-out 1s;
+          animation: fadeOut ease-out 1s;
   -webkit-animation-delay: 2.25s;
           animation-delay: 2.25s;
   -webkit-animation-fill-mode: forwards;
@@ -722,16 +722,18 @@ img {
 }
 
 @media (min-width: 25em) {
-  .restaurants__item:hover {
+  .restaurants__item a:hover {
     border: 3px solid #9356DC;
     border-radius: 17px;
+    margin: -3px;
   }
 }
 
 @media (max-width: 24.9375em) {
-  .restaurants__item:active {
+  .restaurants__item a:active {
     border: 3px solid #9356DC;
     border-radius: 17px;
+    margin: -3px;
   }
 }
 
