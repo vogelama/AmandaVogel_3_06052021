@@ -8,9 +8,16 @@ $darkGrey: #353535;
 $mediumGrey: #7e7e7e;
 $lightGrey: #f6f6f6;
 $locationGrey: #eaeaea;
-$linearGrad: linear-gradient(355deg, rgba(147,86,220,1) 0%, rgba(190,100,219,1) 40%, rgba(255,121,218,1) 100%);
-$reverseLinearGrad: linear-gradient(193deg, rgba(147,86,220,1) 0%, rgba(190,100,219,1) 40%, rgba(255,121,218,1) 100%);
-$shadow: 2px 5px 10px rgba(0,0,0,.05), -2px 5px 10px rgba(0,0,0,.05);
+$linearGrad: linear-gradient(355deg, 
+rgba(147,86,220,1) 0%, 
+rgba(190,100,219,1) 40%, 
+rgba(255,121,218,1) 100%);
+$reverseLinearGrad: linear-gradient(193deg, 
+rgba(147,86,220,1) 0%, 
+rgba(190,100,219,1) 40%, 
+rgba(255,121,218,1) 100%);
+$shadow: 2px 5px 10px rgba(0,0,0,.05), 
+-2px 5px 10px rgba(0,0,0,.05);
 
 //font styles
 $font-rob: 'Roboto', sans-serif;
