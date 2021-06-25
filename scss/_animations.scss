@@ -140,7 +140,7 @@ input[type=checkbox] {
     transform: scaleX(0);
     transform-origin: right;
     width: 0px;
-    transition: ease-in-out .75s;
+    transition: ease-in-out .5s;
 
     &-circle {
       display: flex;
@@ -154,26 +154,40 @@ input[type=checkbox] {
   }
 
   .fa-check {
+    display: inline-block;
     color: #99E2D0;
     font-size: .85rem;
     cursor: pointer;
     user-select: none;
   }
+
+  @keyframes checkRotate {
+    25% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   
   .menu__check input:checked ~ .menu__item .checkmark {
     width: 50px;
-    transition: ease-in-out .75s;
+    transition: ease-in-out .5s;
     transform: scaleX(1);
+  }
+
+  .menu__check input:checked ~ .menu__item .checkmark .fa-check {
+    animation: checkRotate .75s;
   }
   
   .menu__check input:checked ~ .menu__item .menu__text {
     width: calc(100% - 118px);
-    transition: ease-in-out .75s;
+    transition: ease-in-out .5s;
   }
 
   .menu__check input:checked ~ .menu__item .menu__money {
     padding-right: 15px;
-    transition: ease-in-out .75s;
+    transition: ease-in-out .5s;
   }
   /* End Checkmark animation */
 
