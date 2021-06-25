@@ -637,16 +637,16 @@ img {
   position: relative;
 }
 
-.process__item:last-of-type {
-  margin-bottom: 0;
-}
-
-.process__item3 {
+.process__item:hover {
   background-color: #F5EDFF;
 }
 
-.process__item3 i {
+.process__item:hover i {
   color: #9356DC;
+}
+
+.process__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .process__number {
